@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7d771ed0331c4bf28a1226f3769ca6a1" Name="Diagram1" ZoomLevel="40">
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_Idiomas" Width="1.5" PointX="5.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.ConfiguracionCorreo" Width="1.5" PointX="7.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Parametros" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Usuarios" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.webpages_Acciones" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.webpages_Membership" Width="1.5" PointX="8.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.webpages_OAuthMembership" Width="1.5" PointX="9.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.webpages_Roles" Width="1.5" PointX="6" PointY="3.25" IsExpanded="true" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK__Parametro__Usuar__7869D707" ManuallyRouted="false" />
+        <AssociationConnector Association="pvo_netsuiteModel.webpages_AccionesInRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="pvo_netsuiteModel.webpages_Roles_Admin_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="pvo_netsuiteModel.webpages_UsersInRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.UsuarioUbicaciones" Width="1.5" PointX="6" PointY="0.75" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Usuarios_UsuarioUbicaciones" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.SalesOrder" Width="1.5" PointX="10.625" PointY="8.125" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.StockDisponible" Width="1.5" PointX="6" PointY="13.5" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Ubicaciones" Width="1.5" PointX="3.75" PointY="13.75" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_PruebaSalesOrder_PruebasUbicaciones" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_PruebaSalesOrder_Usuarios" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_PruebaStockDisponible_PruebasUbicaciones" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_PruebasUbicaciones_Usuario_Ubicaciones" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_Productos" Width="1.5" PointX="0.75" PointY="8" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_PruebaStockDisponible_ProductosPrueba" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Conceptos" Width="1.5" PointX="11.375" PointY="1.25" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Estatus" Width="1.5" PointX="13.625" PointY="1" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Conceptos_Estatus" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_SalesOrder_Estatus" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Invoice_SO" Width="1.5" PointX="15.875" PointY="5.25" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Invoice_Estatus" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Invoice_SalesOrder" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Invoice_Usuarios" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.AplicacionPago" Width="1.5" PointX="3" PointY="6.75" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_AplicacionPago_Usuarios" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.DetalleAplicacionPago" Width="1.5" PointX="18.125" PointY="5.875" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_DetalleAplicacionPago_AplicacionPago" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_DetalleAplicacionPago_Invoice_SO" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_MetodosPago" Width="1.5" PointX="0.75" PointY="11.875" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_AplicacionPago_Catalogo_MetodosPago" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_MetodoPagoSAT" Width="1.5" PointX="12.375" PointY="4.875" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_SalesOrder_Catalogo_MetodoPagoSAT" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.DetalleSalesOrder" Width="1.5" PointX="18.875" PointY="9.625" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_DetalleSalesOrder_Catalogo_Productos" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_DetalleSalesOrder_Estatus" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_DetalleSalesOrder_SalesOrder" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_FormasPagoSAT" Width="1.5" PointX="8.375" PointY="13.5" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_UsoCFDI" Width="1.5" PointX="13.375" PointY="10.875" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_SalesOrder_Catalogo_FormasPagoSAT" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_SalesOrder_Catalogo_UsoCFDI" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_NivelesPrecio" Width="1.5" PointX="1.125" PointY="15.125" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.NivelesPrecioProducto" Width="1.5" PointX="3.375" PointY="16.5" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_NivelesPrecioProducto_Catalogo_NivelesPrecio" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_NivelesPrecioProducto_Catalogo_Productos" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Usuarios_Ubicaciones" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_TipoCliente" Width="1.5" PointX="13.375" PointY="13.875" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Resp_DetalleSalesOrder" Width="1.5" PointX="21.125" PointY="7" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Resp_SalesOrder" Width="1.5" PointX="15.875" PointY="10.75" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_RespSalesOrder_Catalogo_FormasPagoSAT" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_RespSalesOrder_Catalogo_MetodoPagoSAT" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Resp_DetalleSalesOrder_Catalogo_Productos" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_RespSalesOrder_Catalogo_UsoCFDI" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Resp_DetalleSalesOrder_Estatus" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_RespSalesOrder_Estatus" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Resp_DetalleSalesOrder_SalesOrder" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_RespSalesOrder_PruebasUbicaciones" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_RespSalesOrder_Usuarios" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_Bancos" Width="1.5" PointX="10.375" PointY="15.875" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_AplicacionPago_Catalogo_Bancos" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_Exportaciones" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.DescuentoClienteArticulo" Width="1.5" PointX="8" PointY="17.375" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_DescuentoClienteArticulo_Catalogo_Productos" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_Terminos" Width="1.5" PointX="16.375" PointY="0.875" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Customers" Width="1.5" PointX="21.625" PointY="11.75" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_AplicacionPago_Customers" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Customers_Catalogo_NivelesPrecio" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Customers_Catalogo_Terminos" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Customers_Catalogo_TipoCliente" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Invoice_Customers" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_PruebaSalesOrder_Customers" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_RespSalesOrder_Customers" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Table_1_Customers" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_Cuentas" Width="1.5" PointX="5.375" PointY="10.75" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_Terminales" Width="1.5" PointX="6" PointY="20.375" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Catalogo_Terminales_Ubicaciones" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_CuentasBancarias" Width="1.5" PointX="3" PointY="20.125" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Catalogo_CuentasBancarias_Catalogo_MetodosPago" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Catalogo_CuentasBancarias_Catalogo_Bancos" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_AplicacionPago_Ubicaciones" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Invoice_SO_Ubicaciones" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.LogCancelaciones" Width="1.5" PointX="7.375" PointY="10.75" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_Invoice_SO_Catalogo_MetodoPagoSAT" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.RecepcionMercancia" Width="1.5" PointX="6" PointY="23.375" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_RecepcionMercancia_Ubicaciones" />
+        <AssociationConnector Association="pvo_netsuiteModel.FK_RecepcionMercancia_Usuarios" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_Colonias" Width="1.5" PointX="12.375" PointY="16.75" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_Cp" Width="1.5" PointX="14.375" PointY="16.75" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_Estados" Width="1.5" PointX="16.375" PointY="16.75" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_Localidades" Width="1.5" PointX="18.375" PointY="0.75" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_Mostrador" Width="1.5" PointX="18.375" PointY="14.75" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_Municipios" Width="1.5" PointX="18.375" PointY="17.75" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_Paises" Width="1.5" PointX="10.375" PointY="19.75" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Catalogo_RegimenFiscal" Width="1.5" PointX="12.375" PointY="19.75" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.LogSalesOrder" Width="1.5" PointX="14.375" PointY="19.75" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Estimaciones" Width="1.5" PointX="20.375" PointY="0.75" />
+        <EntityTypeShape EntityType="pvo_netsuiteModel.Negadas" Width="1.5" PointX="16.375" PointY="20.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

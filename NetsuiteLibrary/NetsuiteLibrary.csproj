@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{023E6D2D-9DE4-4151-9543-A58E89280D24}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetsuiteLibrary</RootNamespace>
+    <AssemblyName>NetsuiteLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=75b3c62967edc2a2, processorArchitecture=MSIL">
+      <HintPath>..\packages\OAuth.1.0.3\lib\net40\OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\AltaCustomer.cs" />
+    <Compile Include="Clases\AltaNegadas.cs" />
+    <Compile Include="Clases\AltaEstimacion.cs" />
+    <Compile Include="Clases\MapNegadas.cs" />
+    <Compile Include="Clases\MapKardexArticulos.cs" />
+    <Compile Include="Clases\MapClientes.cs" />
+    <Compile Include="Clases\BusquedaKardex.cs" />
+    <Compile Include="Clases\Consulta_Pagos.cs" />
+    <Compile Include="Clases\MapEstimaciones.cs" />
+    <Compile Include="Clases\MapSalesOrder.cs" />
+    <Compile Include="Clases\MapFacturasPagos.cs" />
+    <Compile Include="Clases\MAPInvoicePendiente.cs" />
+    <Compile Include="Clases\MapFacturasPendientesPago.cs" />
+    <Compile Include="Clases\MapPVONetsuite.cs" />
+    <Compile Include="Clases\MapRecepcionMercancia.cs" />
+    <Compile Include="Clases\MapDetalleRecepcionMercancia.cs" />
+    <Compile Include="Clases\MapTransferenciaOrden.cs" />
+    <Compile Include="Clases\MapMRP.cs" />
+    <Compile Include="Clases\MapListaArticulos.cs" />
+    <Compile Include="Clases\MapCorteCajaRep.cs" />
+    <Compile Include="Clases\DatosSat.cs" />
+    <Compile Include="Clases\Sinc_JobItems.cs" />
+    <Compile Include="Clases\Sinc_Account.cs" />
+    <Compile Include="Clases\Sinc_NivelPrecio.cs" />
+    <Compile Include="Clases\BalanceTerms.cs" />
+    <Compile Include="Clases\Sinc_Item.cs" />
+    <Compile Include="Clases\Sinc_StockInventarios.cs" />
+    <Compile Include="Clases\Sinc_PricingItems.cs" />
+    <Compile Include="Clases\Sinc_AssemblyItems.cs" />
+    <Compile Include="Clases\Sinc_Clientes.cs" />
+    <Compile Include="Clases\MapCorteCaja.cs" />
+    <Compile Include="Clases\BusquedaCorteCaja.cs" />
+    <Compile Include="Clases\AltaPagos.cs" />
+    <Compile Include="Clases\AltaTransferOrder.cs" />
+    <Compile Include="Clases\JsonRespuestaGeneral.cs" />
+    <Compile Include="Clases\EntregaMercancia.cs" />
+    <Compile Include="Clases\RespuestaServicios.cs" />
+    <Compile Include="Clases\AltaSalesOrder.cs" />
+    <Compile Include="Clases\ActualizaStock.cs" />
+    <Compile Include="Clases\ItemList_Model.cs" />
+    <Compile Include="SuiteServlet Connection\ConnectionServer.cs" />
+    <Compile Include="SuiteServlet Connection\OAuthBase.cs" />
+    <Compile Include="SuiteTalk Helpers\AccountHelper.cs" />
+    <Compile Include="SuiteTalk Helpers\CreditMemoHelper.cs" />
+    <Compile Include="SuiteTalk Helpers\NegadasHelper.cs" />
+    <Compile Include="SuiteTalk Helpers\InvoiceHelper.cs" />
+    <Compile Include="SuiteTalk Helpers\ItemFulFillmentHelper.cs" />
+    <Compile Include="SuiteTalk Helpers\EstimacionHelper.cs" />
+    <Compile Include="SuiteTalk Helpers\TransferOrderHelper.cs" />
+    <Compile Include="SuiteTalk Helpers\SearchHelper.cs" />
+    <Compile Include="SuiteTalk Helpers\PaymentHelper.cs" />
+    <Compile Include="SuiteTalk Helpers\SalesOrderHelper.cs" />
+    <Compile Include="SuiteTalk Helpers\CurrencyHelper.cs" />
+    <Compile Include="SuiteTalk Helpers\CashHelper.cs" />
+    <Compile Include="SuiteTalk Helpers\ItemHelper.cs" />
+    <Compile Include="SuiteTalk Helpers\InventaryHelper.cs" />
+    <Compile Include="SuiteTalk Helpers\CustomerHelper.cs" />
+    <Compile Include="SuiteTalk Helpers\DimensionHelper.cs" />
+    <Compile Include="SuiteTalk Service\ConnectionManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SuiteTalk\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://tstdrv2066000.suitetalk.api.netsuite.com/wsdl/v2020_2_0/netsuite.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SuiteTalk\</RelPath>
+      <UpdateFromURL>https://tstdrv2066000.suitetalk.api.netsuite.com/wsdl/v2020_2_0/netsuite.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NetsuiteLibrary_com_netsuite_api_suitetalk_tstdrv2066000_NetSuiteService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SuiteTalk\accounting.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\accountingTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\AsyncResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\AsyncStatusResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\bank.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\bankTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\commonTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\communication.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\communicationTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\core.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\coreTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\customers.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\customerTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\customization.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\customizationTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\demandPlanning.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\demandPlanningTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\employees.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\employees0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\employeeTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\employeeTypes0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\faults.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\faultTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\fileCabinet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\fileCabinetTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\financial.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\financialTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\general.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\GetAccountGovernanceInfoResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\GetAllResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\GetBudgetExchangeRateResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\GetCurrencyRateResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\GetCustomizationIdResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\GetDataCenterUrlsResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\GetDeletedResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\GetIntegrationGovernanceInfoResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\GetItemAvailabilityResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\GetPostingTransactionSummaryResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\GetSavedSearchResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\GetSelectValueResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\GetServerTimeResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\inventory.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\inventoryTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\marketing.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\marketingTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\messages.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\netsuite.wsdl" />
+    <None Include="Web References\SuiteTalk\purchases.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\purchaseTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\ReadResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\ReadResponseList1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\SuiteTalk\relationships.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\relationshipTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\sales.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\saleTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\scheduling.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\schedulingTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\SearchResult1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\SessionResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\supplyChain.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\supplyChainTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\support.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\supportTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\website.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\websiteTypes.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SuiteTalk\WriteResponse1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SuiteTalk\WriteResponseList1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

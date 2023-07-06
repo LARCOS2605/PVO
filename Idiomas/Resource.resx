@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Alert_ConfirmSyncCustom" xml:space="preserve">
+    <value>¿Confirma que desea sincronizar los clientes? El proceso puede tardar un poco.</value>
+  </data>
+  <data name="Alert_CrearCliente" xml:space="preserve">
+    <value>Para porder visualizar el cliente, es necesario ir al apartado "Consultar Clientes" y dar clic en el boton de sincronización.</value>
+  </data>
+  <data name="Alert_Recordatorio" xml:space="preserve">
+    <value>Recordatorio:</value>
+  </data>
+  <data name="Alert_SusSyncCustomer" xml:space="preserve">
+    <value>Se han sincronizado los clientes con exito...</value>
+  </data>
+  <data name="btn_AgregarProducto" xml:space="preserve">
+    <value>Agregar Producto</value>
+  </data>
+  <data name="btn_BuscarProducto" xml:space="preserve">
+    <value>Buscar Producto</value>
+  </data>
+  <data name="btn_GuardarUsuario" xml:space="preserve">
+    <value>Almacenar Usuario</value>
+  </data>
+  <data name="btn_GuardarCliente" xml:space="preserve">
+    <value>Almacenar Cliente</value>
+  </data>
+  <data name="btn_UsuarioActivo" xml:space="preserve">
+    <value>Usuarios Confirmados</value>
+  </data>
+  <data name="btn_UsuarioDesac" xml:space="preserve">
+    <value>Usuarios Desactivados</value>
+  </data>
+  <data name="btn_UsuarioSinConfir" xml:space="preserve">
+    <value>Usuarios Sin Confirmar</value>
+  </data>
+  <data name="btn_UsuarioTodos" xml:space="preserve">
+    <value>Todos Los Usuarios</value>
+  </data>
+  <data name="cbb_Clientes" xml:space="preserve">
+    <value>--- Seleccione Un Cliente ---</value>
+  </data>
+  <data name="cbb_Ubicacion" xml:space="preserve">
+    <value>--- Seleccione su Ubicación ---</value>
+  </data>
+  <data name="cbb_Pais" xml:space="preserve">
+    <value>--- Seleccione el País ---</value>
+  </data>
+  <data name="cbb_Regimen" xml:space="preserve">
+    <value>- Seleccione Régimen Fiscal -</value>
+  </data>
+  <data name="cbb_Estado" xml:space="preserve">
+    <value>--- Seleccione el Estado ---</value>
+  </data>
+  <data name="cbb_TipoCalle" xml:space="preserve">
+    <value>--- Seleccione Tipo de Calle ---</value>
+  </data>
+  <data name="lblt_Acciones" xml:space="preserve">
+    <value>Acciones</value>
+  </data>
+  <data name="lblt_Cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="lblt_ClaveCliente" xml:space="preserve">
+    <value>Clave de Cliente</value>
+  </data>
+  <data name="lblt_Codigo" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="lblt_Correo" xml:space="preserve">
+    <value>Correo Electronico</value>
+  </data>
+  <data name="lblt_Descripcion" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="lblt_Estatus" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="lblt_Lote" xml:space="preserve">
+    <value>Lote</value>
+  </data>
+  <data name="lblt_NivelDescuento" xml:space="preserve">
+    <value>Nivel de Descuento</value>
+  </data>
+  <data name="lblt_Nombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="lblt_NombreCliente" xml:space="preserve">
+    <value>Nombre de Cliente</value>
+  </data>
+  <data name="lblt_Precio" xml:space="preserve">
+    <value>Precio</value>
+  </data>
+  <data name="lblt_RFC" xml:space="preserve">
+    <value>RFC</value>
+  </data>
+  <data name="lblt_Subtotal" xml:space="preserve">
+    <value>Subtotal</value>
+  </data>
+  <data name="lblt_TipoCliente" xml:space="preserve">
+    <value>Tipo Cliente</value>
+  </data>
+  <data name="lbl_BusquedaArticulo" xml:space="preserve">
+    <value>Busqueda de Producto:</value>
+  </data>
+  <data name="lbl_Cantidad" xml:space="preserve">
+    <value>Cantidad:</value>
+  </data>
+  <data name="lbl_Clientes" xml:space="preserve">
+    <value>Cliente:</value>
+  </data>
+  <data name="lbl_CodigoProducto" xml:space="preserve">
+    <value>Código de Producto:</value>
+  </data>
+  <data name="lbl_CorreoElectronico" xml:space="preserve">
+    <value>Correo Electrónico:</value>
+  </data>
+  <data name="lbl_Descripcion" xml:space="preserve">
+    <value>Descripción:</value>
+  </data>
+  <data name="lbl_DescuentoAsignado" xml:space="preserve">
+    <value>Descuento Asignado:</value>
+  </data>
+  <data name="lbl_Existencia" xml:space="preserve">
+    <value>Existencia:</value>
+  </data>
+  <data name="lbl_Idioma" xml:space="preserve">
+    <value>Idiomas:</value>
+  </data>
+  <data name="lbl_InfoContacto" xml:space="preserve">
+    <value>Información de Contacto:</value>
+  </data>
+  <data name="lbl_Mostrador" xml:space="preserve">
+    <value>Mostrador:</value>
+  </data>
+  <data name="lbl_NoLote" xml:space="preserve">
+    <value>No. De Lote:</value>
+  </data>
+  <data name="lbl_Nombre" xml:space="preserve">
+    <value>Nombre:</value>
+  </data>
+  <data name="lbl_Precio" xml:space="preserve">
+    <value>Precio:</value>
+  </data>
+  <data name="lbl_Prueba" xml:space="preserve">
+    <value>Hola</value>
+  </data>
+  <data name="lbl_Roles" xml:space="preserve">
+    <value>Roles de Usuario:</value>
+  </data>
+  <data name="lbl_DatosCliente" xml:space="preserve">
+    <value>Dirección del Cliente</value>
+  </data>
+  <data name="lbl_DatosClienteFis" xml:space="preserve">
+    <value>Datos Fiscales del Cliente</value>
+  </data>
+  <data name="lbl_Total" xml:space="preserve">
+    <value>TOTAL A PAGAR</value>
+  </data>
+  <data name="Mn_Clientes" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="Mn_Configuraciones" xml:space="preserve">
+    <value>Configuración</value>
+  </data>
+  <data name="Mn_OrdenVenta" xml:space="preserve">
+    <value>Ordenes de Venta</value>
+  </data>
+  <data name="Mn_Pagos" xml:space="preserve">
+    <value>Aplicaciones de Pagos</value>
+  </data>
+  <data name="Mn_Usuarios" xml:space="preserve">
+    <value>Usuarios</value>
+  </data>
+  <data name="msg_Usuarios_Activos" xml:space="preserve">
+    <value>Usuarios Activos...</value>
+  </data>
+  <data name="msg_Usuarios_Desactivados" xml:space="preserve">
+    <value>Usuarios Desactivados...</value>
+  </data>
+  <data name="msg_Usuarios_SinCon" xml:space="preserve">
+    <value>Usuarios Sin Confirmar...</value>
+  </data>
+  <data name="msg_Usuarios_Todos" xml:space="preserve">
+    <value>Todos los Usuarios...</value>
+  </data>
+  <data name="ph_ClaveProducto" xml:space="preserve">
+    <value>-- Clave de Producto --</value>
+  </data>
+  <data name="ph_NombreProducto" xml:space="preserve">
+    <value>-- Nombre del Producto --</value>
+  </data>
+  <data name="SL_SyncCustomer" xml:space="preserve">
+    <value>Sincronizando Clientes con Netsuite...</value>
+  </data>
+  <data name="Smn_ApliPago" xml:space="preserve">
+    <value>Registrar Pago Por Cliente</value>
+  </data>
+  <data name="Smn_ConCliente" xml:space="preserve">
+    <value>Consultar Clientes</value>
+  </data>
+  <data name="Smn_ConNetEstatus" xml:space="preserve">
+    <value>Consultar Estatus Netsuite</value>
+  </data>
+  <data name="Smn_ConOV" xml:space="preserve">
+    <value>Consultar Ordenes de Venta</value>
+  </data>
+  <data name="Smn_ConParametros" xml:space="preserve">
+    <value>Consultar Parametros</value>
+  </data>
+  <data name="Smn_ConUsuario" xml:space="preserve">
+    <value>Consultar Usuarios</value>
+  </data>
+  <data name="Smn_crearCliente" xml:space="preserve">
+    <value>Registrar Cliente</value>
+  </data>
+  <data name="Smn_CrearOV" xml:space="preserve">
+    <value>Crear Ordenes de Venta</value>
+  </data>
+  <data name="Smn_CrearUsuario" xml:space="preserve">
+    <value>Crear Nuevo Usuario</value>
+  </data>
+  <data name="sts_Usuario_Activo" xml:space="preserve">
+    <value>Activo</value>
+  </data>
+  <data name="sts_Usuario_Desactivados" xml:space="preserve">
+    <value>Inactivo</value>
+  </data>
+  <data name="SubPage_Cliente" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="SubPage_OV" xml:space="preserve">
+    <value>Orden de Venta</value>
+  </data>
+  <data name="SubPage_Users" xml:space="preserve">
+    <value>Usuarios</value>
+  </data>
+  <data name="Title_CrearOV" xml:space="preserve">
+    <value>Crear Orden de Venta</value>
+  </data>
+  <data name="Tittle_ConsultaCliente" xml:space="preserve">
+    <value>Consulta de Clientes</value>
+  </data>
+  <data name="Tittle_CreateUser" xml:space="preserve">
+    <value>Crear Usuarios</value>
+  </data>
+  <data name="Tittle_CreateCliente" xml:space="preserve">
+    <value>Crear Cliente</value>
+  </data>
+  <data name="Tittle_RegUser" xml:space="preserve">
+    <value>Datos Principales</value>
+  </data>
+  <data name="Tittle_RegCliente" xml:space="preserve">
+    <value>Datos Principales</value>
+  </data>
+  <data name="Tittle_SearchUsers" xml:space="preserve">
+    <value>Consulta de Usuarios</value>
+  </data>
+  <data name="WiS_Articulos" xml:space="preserve">
+    <value>Articulos</value>
+  </data>
+  <data name="WiS_ConfirmPedido" xml:space="preserve">
+    <value>Confirmación de Pedido</value>
+  </data>
+  <data name="lbl_DatosObligatorios" xml:space="preserve">
+    <value>* Datos Obligatorios</value>
+  </data>
+  <data name="btn_BuscarCp" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="cbb_Colonias" xml:space="preserve">
+    <value>--- Seleccione la Colonia  ---</value>
+  </data>
+  <data name="lbl_TipoCliente" xml:space="preserve">
+    <value>*Tipo de Cliente</value>
+  </data>
+  <data name="lbl_TipoPago" xml:space="preserve">
+    <value>*Forma de Pago</value>
+  </data>
+  <data name="SubPage_Estimacion" xml:space="preserve">
+    <value>Estimación</value>
+  </data>
+  <data name="Title_Estimaciones" xml:space="preserve">
+    <value>Crear Estimaciones</value>
+  </data>
+  <data name="SubPage_Negadas" xml:space="preserve">
+    <value>Negadas</value>
+  </data>
+  <data name="Title_Negadas" xml:space="preserve">
+    <value>Crear Negadas</value>
+  </data>
+</root>

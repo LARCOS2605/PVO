@@ -1,0 +1,18 @@
+﻿@model MvcFlash.Core.Messages.SimpleMessage
+<div id="successMessage" class="alert alert-@(Model.MessageType == "error" ? "danger" : Model.MessageType)">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  <strong>@Model.Title</strong> @Model.Content
+  @if (Model.Data != null) {
+    @Html.DisplayFor(m => m.Data)
+  }
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script> 
+    $(document).ready(function () {
+            setTimeout(function () {
+                $('#successMessage').fadeOut('fast');
+
+            }, 10000);
+    });
+</script>
